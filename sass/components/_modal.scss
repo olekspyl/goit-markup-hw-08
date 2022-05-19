@@ -1,0 +1,97 @@
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 581px;
+    width: 95vw;
+    background-color: var(--bcg-first-color);
+    border-radius: 4px;
+    box-shadow:
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    animation: changeBgColor 2000ms;
+    padding: 40px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
+
+    &__close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: transparent;
+        fill: currentColor;
+        padding: 6px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:focus, &:hover {
+            fill: var(--accent-text-color);
+            border-color: var(--accent-text-color);
+        }
+    }
+
+    &__action {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--first-header-color);
+        margin-bottom: 12px;
+        margin-top: 0px;
+    }
+
+    &__field {
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        display: block;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--first-text-color);
+        margin-bottom: 4px;
+    }
+
+
+    
+
+
+}
+
+@keyframes changeBgColor {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.backdrop .modal .is-hidden {
+    transition: opacity 500ms;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

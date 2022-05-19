@@ -1,0 +1,59 @@
+.modal__agree {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__agree-label {
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
+    color: var(--first-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+         @media screen and (min-width: 1200px) {
+          font-size: 14px;
+ }
+}
+
+
+.modal__agree-label span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--first-header-color);
+    border-radius: 2px;
+    display: flex;
+    margin-right: 9px;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__link {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.71;
+    letter-spacing: 0.01em;
+    color: var(--accent-text-color);
+    text-decoration: underline;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+}
+}
+
+
+.modal__agree:focus+.modal__agree-label span {
+    border-color: var(--accent-text-color);
+}
+
+.modal__agree:checked+.modal__agree-label span {
+    background-color: var(--accent-text-color);
+    border: none;
+}
+
+.modal__check {
+    fill: transparent;
+}
+
+.modal__agree:checked+.modal__agree-label .modal__check {
+    fill: var(--bcg-first-color);
+}

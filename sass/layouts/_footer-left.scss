@@ -1,0 +1,105 @@
+.footer {
+    background-color: var(--bcg-accent-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+
+
+    &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 60px;
+            padding-top: 60px;
+            
+            
+            @media screen and (min-width: 1200px) {
+                    flex-direction: row;
+                   margin-left: auto;
+                   
+                }
+            }
+
+    &__wrap {
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+                @media screen and (min-width: 1200px) {
+                    flex-wrap: nowrap;
+                    align-items: baseline;
+                }
+                             
+            }
+
+    }
+    &__left-side {
+        @media screen and (min-width: 768px) {
+            margin-right: 165px;
+            margin-bottom: 60px;
+            }
+
+            @media screen and (min-width: 1200px) {
+                margin-right: 70px;
+                margin-bottom: 0px;
+            }
+        
+    }
+
+    &__logo {
+        line-height: 1.19;
+        margin-bottom: 20px;
+        display: block;
+        color: var(--first-title-color);
+        padding: 0px;
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+                text-align:left;
+            }
+    }
+
+    &__address-item {
+        margin-bottom: 8px;
+        text-align: center;
+        font-style: normal;
+        color: var(--second-text-color);
+
+        @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
+    }
+
+    &__contact-item {
+        text-align: center;
+        margin-bottom: 8px;
+        &:last-child {
+                padding: 0px;
+                margin-bottom: 89px;
+                @media screen and (min-width: 768px) {
+                        margin-bottom: 0px;
+                    }
+            }
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+        
+
+    } 
+
+    &__mail, &__tel {
+        color: var(--second-header-color);
+        display: flex;
+        font-style: normal;
+        color: rgba(255, 255, 255, 0.6);
+        display: block;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+            color: var(--accent-text-color);
+        }
+    }
+
+
+}
+
+

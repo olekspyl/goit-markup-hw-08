@@ -1,0 +1,108 @@
+.team {
+    background-color: var(--bcg-second-color);
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    &__title {
+        font-size: 28px;
+        
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin: 0px auto 30px auto;
+        @media screen and (min-width: 1200px) {
+           font-size: 36px;
+           margin: 0px auto 50px auto;
+        }
+
+    }
+
+    &__list {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-left: -30px;
+        }
+        
+    }
+
+    &__item {
+        background-color: var(--bcg-first-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px; 
+        margin-bottom: 30px;
+        
+        @media screen and (min-width: 768px) {
+            width: calc(100% / 2 - 30px);
+            margin-left: 30px;
+            }
+        
+        @media screen and (min-width: 1200px) {
+            width: calc(100% / 4 - 30px);
+            margin-left: 30px;
+            }
+        }
+
+    &__wrap {
+
+        padding: 30px 32px;
+        text-align: center;
+        display: block;
+    }
+
+    &__item-title {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0px;
+        min-width: 152px;
+        margin-bottom: 10px;
+    }
+
+    &__meta {
+        color: var(--first-text-color);
+        margin: 0px;
+        min-width: 147px;
+        margin-bottom: 16px;
+    }
+
+    &__list-icon {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    &__link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: var(--bcg-first-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus, &:hover {
+            background-color: var(--bcg-btn-color);
+        }
+    }
+
+    &__icon {
+        fill: var(--icons-color);
+    }
+}
+
+
+.team__item-icon + .team__item-icon {
+    margin-left: 10px;
+}
+
+.team__link:hover .team__icon {
+    fill: var(--bcg-first-color);
+}
+
+.team__link:focus .team__icon {
+    fill: var(--bcg-first-color);
+}

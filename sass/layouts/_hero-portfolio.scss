@@ -1,0 +1,106 @@
+
+
+.btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    
+    align-items: center;
+    text-align: center;
+    border: transparent;
+    cursor: pointer;
+
+    color: inherit;
+    padding: 0px;
+    border-radius: 4px;
+
+    display: inline-block;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+        color: var(--btn-color);
+        background-color: var(--bcg-btn-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &__order {
+        display: block;
+        text-align: center;
+        color: var(--btn-color);
+        background-color: var(--bcg-btn-color);
+        padding: 10px 32px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 200px;
+    }
+}
+
+
+.portfolio {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+ 
+    &__btn-container {
+        display: flex;
+    }
+    &__btn-list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+
+        @media screen and (min-width: 768px) {
+                margin-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__btn-item {
+        margin-right: 8px;
+    &:last-child {
+        margin-right: 0px;
+    }
+    }
+
+
+    &__btn {
+        background-color: var(--bcg-second-color);
+        padding: 6px 22px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+            margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &__btn--choosen {
+        color: var(--btn-color);
+        background-color: var(--bcg-btn-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__btn--width {
+        min-width: 128px;
+    }
+
+    
+
+}
