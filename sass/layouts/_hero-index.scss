@@ -13,7 +13,7 @@
                 width: 360px;
             }
         
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 1199.98px) {
                 width: 696px;
             }
          }
@@ -21,8 +21,7 @@
 
 
     &__bcgi {
-            padding-top: 118px;
-            padding-bottom: 118px;
+
             background-image: linear-gradient(rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)),
                 url('../images/mobile-bcgi.jpg');
             background-color: var(--bcg-accent-color);
@@ -56,7 +55,8 @@
                 }
 
             @media screen and (min-width: 1200px) {
-                padding: 200px 452px 200px 452px;
+                padding-top: 200px;
+                padding-bottom: 200px;
                 background-image: linear-gradient(rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)),
                         url('../images/Imgbcg.jpg');
                         @media (min-device-pixel-ratio: 2),
@@ -65,7 +65,9 @@
                                 background-image: linear-gradient(rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)),
                                     url('../images/desktop-bcgi-2x.jpg');
                             }
+                            width: 100%;
                             max-width: 1600px;
+                            
                         }
             }
     
