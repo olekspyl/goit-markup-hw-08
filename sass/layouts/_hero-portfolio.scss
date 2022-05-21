@@ -40,10 +40,12 @@
 
 
 .portfolio {
-    margin-left: 0px;
-    margin-right: 0px;
+    // margin-left: 0px;
+    // margin-right: 0px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
+    
  
     &__btn-container {
         display: flex;

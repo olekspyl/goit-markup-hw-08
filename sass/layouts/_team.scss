@@ -6,7 +6,6 @@
 
     &__title {
         font-size: 28px;
-        
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
@@ -37,11 +36,15 @@
         @media screen and (min-width: 768px) {
             width: calc(100% / 2 - 30px);
             margin-left: 30px;
+            &:nth-child(3), &:nth-child(4)  {
+            margin-bottom: 0px;
+            }
             }
         
         @media screen and (min-width: 1200px) {
             width: calc(100% / 4 - 30px);
             margin-left: 30px;
+            margin-bottom: 0px;
             }
         }
 

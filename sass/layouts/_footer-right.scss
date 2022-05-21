@@ -1,12 +1,7 @@
 
 .footer {
 
-    &__medium {
-        @media screen and (min-width: 1200px) {
-                margin-right: 93px;
-            }
-
-    }
+ 
 
     &__action {
         text-align: center;
@@ -29,7 +24,7 @@
         display: flex;
         justify-content: center;
         padding-left: 0px;
-        margin-bottom: 96px;
+        
         @media screen and (min-width: 768px) {
                 margin-bottom: 0px;
             }
