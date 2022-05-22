@@ -1,5 +1,17 @@
 .hero {
     letter-spacing: 0.06em;
+    @media screen and (max-width: 480px) {
+            display: flex;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 1200px) {
+            height: 600px;
+
+        }
+
 
 
 
